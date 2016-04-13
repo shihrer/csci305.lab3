@@ -10,9 +10,8 @@
 ; Check to see if parameter list is a well formed set
 (define (set? list)					; Define set? function to accept a list
 	(cond ((null? list) #t)				; Return true when list is null.  Means entire list has been checked or it's an empty list.
-		((member? (car list)			; Check to see if first item of list is a member of the rest of the list.
-			(cdr list)) #f)			; Return false if member? returns true.
-		(else (set? (cdr list)))))		; Otherwise, recursively call set? on remaining list.
+	((member? (car list) (cdr list)) #f)		; Check to see if first item of list is a member of the rest of the list.  Return false if member? returns true.
+	(else (set? (cdr list)))))			; Otherwise, recursively call set? on remaining list.
 
 
 ; Tests
