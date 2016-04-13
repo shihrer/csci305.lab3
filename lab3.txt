@@ -1,0 +1,15 @@
+1.  (3 8 9 2 4 10)
+2.  It increments the items of a given list by 1
+3.  The line checks if list is empty/null
+4.  The line returns the empty list when list is empty
+5.  Recursively calls function f on remaining list after incrementing the first item of the list
+6.  #f
+7.  #t
+8.  #f
+9.  #f
+10. (cheese eggs blue ham and sandwich)
+11. (and cheese blue)
+12. 
+13. 
+14. We spent about 5 hours each on this lab.
+15. 
